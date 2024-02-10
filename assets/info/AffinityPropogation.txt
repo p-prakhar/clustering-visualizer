@@ -1,0 +1,14 @@
+Parameters: The Affinity Propagation algorithm takes as input a set of data points and two parameters: the damping factor and the maximum number of iterations.
+
+Affinity Propagation: Affinity Propagation is a clustering algorithm that aims to find the most representative data points in a set, called exemplars, and assign each data point to the nearest exemplar.
+
+Basic algorithm: The Affinity Propagation algorithm works as follows:
+1. Initialize the responsibility matrix and the availability matrix to 0.
+2. Calculate the similarity between all pairs of data points using a similarity metric.
+3. Iterate until convergence or until the maximum number of iterations is reached:
+	3.1 Update the responsibility matrix using the current availability matrix and similarity matrix.
+	3.2 Update the availability matrix using the current responsibility matrix.
+	3.3 Set the diagonal of the responsibility matrix to the damping factor times its previous value plus 1 minus the damping factor times its maximum value.
+4. Assign each data point to the exemplar with the highest responsibility value.
+
+Applications and limitations: Affinity Propagation is a powerful algorithm that can automatically determine the number of clusters and is robust to noisy data. It has been used in applications such as image segmentation, document clustering, and gene expression analysis. However, it can be computationally expensive and may produce too many or too few clusters depending on the choice of the maximum number of iterations. Additionally, it may not work well with high-dimensional data or when the data is not well-clustered.

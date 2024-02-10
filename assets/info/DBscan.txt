@@ -1,0 +1,12 @@
+Parameters: The DBSCAN algorithm takes as input a set of data points and two parameters: the neighborhood radius (epsilon) and the minimum number of points required to form a dense region (min_samples).
+
+DBSCAN: DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is a clustering algorithm that groups together points that are close to each other in a high-density region, while marking points that lie in low-density regions as noise.
+
+Basic algorithm: The DBSCAN algorithm works as follows:
+1. Randomly select a data point that has not been visited.
+2. Find all data points within a distance of epsilon from the selected point, forming the neighborhood of the point.
+3. If the number of points in the neighborhood is greater than or equal to the minimum number of points required to form a dense region, then all points in the neighborhood and their own neighborhoods are considered part of the same cluster.
+4. If the selected point has fewer than the minimum number of points required to form a dense region in its neighborhood, then mark it as noise.
+5. Repeat steps 1-4 for all unvisited data points until all data points have been visited.
+
+Applications and limitations: DBSCAN is a powerful algorithm that can find arbitrarily-shaped clusters and is robust to noise and outliers. It has been used in applications such as image segmentation, anomaly detection, and recommendation systems. However, it can be sensitive to the choice of the parameters epsilon and min_samples, and may produce suboptimal results if these parameters are not chosen carefully. Additionally, it may not work well with high-dimensional data or when the clusters have widely varying densities.

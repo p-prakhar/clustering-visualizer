@@ -1,0 +1,11 @@
+Parameters: The K-means algorithm takes as input a set of data points and the number of clusters (k) to be formed.
+
+Kmeans : K-means is a clustering algorithm that aims to partition a set of data points into k clusters, where each point belongs to the cluster whose centroid is nearest to it.
+
+Basic algorithm: The K-means algorithm works as follows:
+1. Randomly initialize k cluster centroids.
+2. Assign each data point to the nearest centroid.
+3. Recalculate the centroid of each cluster.
+4. Repeat steps 2-3 until the centroids no longer move or a maximum number of iterations is reached.
+
+Applications and limitations: K-means is a popular algorithm for clustering data points and has been used in a wide range of applications such as image segmentation, customer segmentation, and anomaly detection. However, it has some limitations, such as sensitivity to initial centroid placement, the need to specify the number of clusters in advance, and poor performance on non-linearly separable data. Additionally, K-means is not suitable for clustering datasets with varying densities or irregular shapes.
